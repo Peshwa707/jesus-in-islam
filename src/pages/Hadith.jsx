@@ -9,6 +9,22 @@ export default function Hadith() {
     setExpandedHadith(expandedHadith === id ? null : id)
   }
 
+  // Format topic for display
+  const formatTopic = (topic) => {
+    return topic
+      .split('_')
+      .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(' ')
+  }
+
+  // Determine grade based on source (Bukhari and Muslim are Sahih)
+  const getGrade = (source) => {
+    if (source.includes('Bukhari') || source.includes('Muslim')) {
+      return 'Sahih'
+    }
+    return 'Hasan'
+  }
+
   const getGradeColor = (grade) => {
     switch (grade.toLowerCase()) {
       case 'sahih':
@@ -39,86 +55,86 @@ export default function Hadith() {
         </p>
       </div>
 
-      {hadithCollection.map(hadith => (
-        <div key={hadith.id} className="expandable">
-          <div
-            className="expandable-header"
-            onClick={() => toggleHadith(hadith.id)}
-          >
-            <div style={{ flex: 1 }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.25rem' }}>
-                <h3 style={{ margin: 0 }}>{hadith.topic}</h3>
-                <span
-                  className="badge"
-                  style={{
-                    background: getGradeColor(hadith.grade),
-                    color: 'white',
-                    fontSize: '0.7rem'
-                  }}
-                >
-                  {hadith.grade}
-                </span>
-              </div>
-              <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>
-                {hadith.source}
-              </p>
-            </div>
-            {expandedHadith === hadith.id ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
-          </div>
-
-          {expandedHadith === hadith.id && (
-            <div className="expandable-content">
-              {hadith.arabic && (
-                <div className="arabic-text" style={{
-                  fontSize: '1.3rem',
-                  marginTop: '1rem',
-                  padding: '1rem',
-                  background: 'linear-gradient(135deg, #f8f6f0, #fff)',
-                  borderRadius: 'var(--radius-sm)'
-                }}>
-                  {hadith.arabic}
+      {hadithCollection.map(hadith => {
+        const grade = getGrade(hadith.source)
+        return (
+          <div key={hadith.id} className="expandable">
+            <div
+              className="expandable-header"
+              onClick={() => toggleHadith(hadith.id)}
+            >
+              <div style={{ flex: 1 }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.25rem' }}>
+                  <h3 style={{ margin: 0 }}>{formatTopic(hadith.topic)}</h3>
+                  <span
+                    className="badge"
+                    style={{
+                      background: getGradeColor(grade),
+                      color: 'white',
+                      fontSize: '0.7rem'
+                    }}
+                  >
+                    {grade}
+                  </span>
                 </div>
-              )}
-
-              <p style={{
-                lineHeight: '1.8',
-                color: 'var(--text-secondary)',
-                marginTop: '1rem',
-                padding: '1rem',
-                background: 'var(--surface-hover)',
-                borderRadius: 'var(--radius-sm)',
-                borderLeft: '3px solid var(--primary-color)'
-              }}>
-                {hadith.text}
-              </p>
-
-              {hadith.narrator && (
-                <p style={{
-                  fontSize: '0.85rem',
-                  color: 'var(--text-muted)',
-                  marginTop: '0.75rem',
-                  fontStyle: 'italic'
-                }}>
-                  Narrated by: {hadith.narrator}
+                <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>
+                  {hadith.source} #{hadith.hadithNumber}
                 </p>
-              )}
+              </div>
+              {expandedHadith === hadith.id ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
+            </div>
 
-              {hadith.explanation && (
-                <div style={{
+            {expandedHadith === hadith.id && (
+              <div className="expandable-content">
+                {hadith.arabic && (
+                  <div className="arabic-text" style={{
+                    fontSize: '1.3rem',
+                    marginTop: '1rem',
+                    padding: '1rem',
+                    background: 'linear-gradient(135deg, #f8f6f0, #fff)',
+                    borderRadius: 'var(--radius-sm)'
+                  }}>
+                    {hadith.arabic}
+                  </div>
+                )}
+
+                <p style={{
+                  lineHeight: '1.8',
+                  color: 'var(--text-secondary)',
                   marginTop: '1rem',
                   padding: '1rem',
-                  background: '#e3f2fd',
-                  borderRadius: 'var(--radius-sm)'
+                  background: 'var(--surface-hover)',
+                  borderRadius: 'var(--radius-sm)',
+                  borderLeft: '3px solid var(--primary-color)'
                 }}>
-                  <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>
-                    <strong>Explanation:</strong> {hadith.explanation}
+                  {hadith.translation}
+                </p>
+
+                {hadith.narrator && (
+                  <p style={{
+                    fontSize: '0.85rem',
+                    color: 'var(--text-muted)',
+                    marginTop: '0.75rem',
+                    fontStyle: 'italic'
+                  }}>
+                    Narrated by: {hadith.narrator}
                   </p>
-                </div>
-              )}
-            </div>
-          )}
-        </div>
-      ))}
+                )}
+
+                {hadith.themes && hadith.themes.length > 0 && (
+                  <div style={{ marginTop: '0.75rem', display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
+                    {hadith.themes.map((theme, idx) => (
+                      <span key={idx} className="badge badge-secondary" style={{ fontSize: '0.75rem' }}>
+                        {theme}
+                      </span>
+                    ))}
+                  </div>
+                )}
+              </div>
+            )}
+          </div>
+        )
+      })}
 
       <div className="card" style={{ marginTop: '1.5rem' }}>
         <h3>Hadith Grading</h3>

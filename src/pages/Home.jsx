@@ -3,6 +3,12 @@ import { BookOpen, Scroll, Heart, BookMarked, Clock, GitCompare, Star } from 'lu
 import { namesOfIsa } from '../data/jesusData'
 
 export default function Home() {
+  // Combine primary name with titles for display
+  const allNames = [
+    { arabic: namesOfIsa.primary.arabic, english: namesOfIsa.primary.meaning },
+    ...namesOfIsa.titles.map(t => ({ arabic: t.arabic, english: t.meaning }))
+  ]
+
   return (
     <div className="page">
       <div className="page-header">
@@ -25,7 +31,7 @@ export default function Home() {
       <h2 style={{ marginBottom: '1rem', color: 'var(--primary-color)' }}>Names & Titles of Isa</h2>
       <div className="card" style={{ marginBottom: '1.5rem' }}>
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
-          {namesOfIsa.map((name, index) => (
+          {allNames.map((name, index) => (
             <div key={index} className="badge badge-primary" style={{ padding: '0.5rem 1rem', fontSize: '0.85rem' }}>
               <span className="arabic-name">{name.arabic}</span> - {name.english}
             </div>

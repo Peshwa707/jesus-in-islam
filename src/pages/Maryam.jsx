@@ -16,7 +16,7 @@ export default function Maryam() {
           <Heart size={28} />
         </div>
         <h1>Maryam (Mary)</h1>
-        <p className="arabic-title">مريم عليها السلام</p>
+        <p className="arabic-title">{maryamInfo.arabicName}</p>
         <p>The blessed mother of Prophet Isa, honored in the Quran</p>
       </div>
 
@@ -30,34 +30,33 @@ export default function Maryam() {
 
       <div className="card">
         <h3>Her Status in Islam</h3>
-        <p style={{ marginBottom: '1rem' }}>{maryamInfo.status}</p>
+        <p style={{ marginBottom: '1rem' }}>{maryamInfo.description}</p>
 
-        <div style={{
-          padding: '1rem',
-          background: 'var(--surface-hover)',
-          borderRadius: 'var(--radius-sm)',
-          marginTop: '1rem'
-        }}>
-          <p className="arabic-text" style={{ fontSize: '1.4rem', marginBottom: '0.75rem' }}>
-            {maryamInfo.quranicQuote.arabic}
-          </p>
-          <p style={{ fontStyle: 'italic', color: 'var(--text-secondary)' }}>
-            "{maryamInfo.quranicQuote.translation}"
-          </p>
-          <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginTop: '0.5rem' }}>
-            — {maryamInfo.quranicQuote.reference}
-          </p>
-        </div>
+        {maryamInfo.relatedVerses.length > 0 && (
+          <div style={{
+            padding: '1rem',
+            background: 'var(--surface-hover)',
+            borderRadius: 'var(--radius-sm)',
+            marginTop: '1rem'
+          }}>
+            <p style={{ fontStyle: 'italic', color: 'var(--text-secondary)' }}>
+              "{maryamInfo.relatedVerses[0].text}"
+            </p>
+            <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginTop: '0.5rem' }}>
+              — {maryamInfo.relatedVerses[0].surah} {maryamInfo.relatedVerses[0].ayah}
+            </p>
+          </div>
+        )}
       </div>
 
-      <h2 style={{ margin: '1.5rem 0 1rem', color: 'var(--primary-color)' }}>Her Virtues</h2>
+      <h2 style={{ margin: '1.5rem 0 1rem', color: 'var(--primary-color)' }}>Her Titles</h2>
       <div className="card">
-        {maryamInfo.virtues.map((virtue, index) => (
+        {maryamInfo.titles.map((item, index) => (
           <div key={index} style={{
             display: 'flex',
             alignItems: 'flex-start',
             gap: '0.75rem',
-            marginBottom: index < maryamInfo.virtues.length - 1 ? '1rem' : 0
+            marginBottom: index < maryamInfo.titles.length - 1 ? '1rem' : 0
           }}>
             <div style={{
               minWidth: '24px',
@@ -73,7 +72,27 @@ export default function Maryam() {
             }}>
               {index + 1}
             </div>
-            <p style={{ color: 'var(--text-secondary)' }}>{virtue}</p>
+            <div>
+              <p style={{ color: 'var(--text-primary)', fontWeight: '600' }}>
+                {item.title} <span className="arabic-name">({item.arabic})</span>
+              </p>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>{item.meaning}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <h2 style={{ margin: '1.5rem 0 1rem', color: 'var(--primary-color)' }}>Key Points</h2>
+      <div className="card">
+        {maryamInfo.keyPoints.map((point, index) => (
+          <div key={index} style={{
+            display: 'flex',
+            alignItems: 'flex-start',
+            gap: '0.75rem',
+            marginBottom: index < maryamInfo.keyPoints.length - 1 ? '0.75rem' : 0
+          }}>
+            <Star size={16} color="var(--secondary-color)" style={{ marginTop: '3px', flexShrink: 0 }} />
+            <p style={{ color: 'var(--text-secondary)' }}>{point}</p>
           </div>
         ))}
       </div>
@@ -98,7 +117,9 @@ export default function Maryam() {
       <div className="card" style={{ marginTop: '1.5rem' }}>
         <h3>The Annunciation</h3>
         <p style={{ marginBottom: '1rem' }}>
-          {maryamInfo.annunciation}
+          Angel Jibril (Gabriel) appeared to Maryam while she was in seclusion, announcing that Allah would grant her a pure son.
+          When she questioned how this could be possible since no man had touched her, the angel explained that for Allah,
+          creating something is as simple as saying "Be" and it is.
         </p>
         <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>
           This story is beautifully narrated in Surah Maryam (19:16-35) and Surah Al-Imran (3:42-47).
