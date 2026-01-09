@@ -60,10 +60,10 @@ export default function Comparative() {
                   {belief.topic}
                 </td>
                 <td style={{ padding: '1rem', color: 'var(--text-secondary)' }}>
-                  {belief.islam}
+                  {belief.islamicBelief}
                 </td>
                 <td style={{ padding: '1rem', color: 'var(--text-secondary)' }}>
-                  {belief.christianity}
+                  {belief.christianBelief}
                 </td>
               </tr>
             ))}
