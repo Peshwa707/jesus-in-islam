@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { BookOpen, Scroll, Heart, BookMarked, Clock, GitCompare, Star, Compass, BookText } from 'lucide-react'
+import { BookOpen, Scroll, Heart, BookMarked, Clock, GitCompare, Star, Compass, BookText, Flame } from 'lucide-react'
 import { namesOfIsa } from '../data/jesusData'
 
 export default function Home() {
@@ -103,6 +103,14 @@ export default function Home() {
           </div>
           <h3>Biblical Prophecies</h3>
           <p>Muhammad foretold</p>
+        </Link>
+
+        <Link to="/end-times" className="quick-action">
+          <div className="icon" style={{ background: 'linear-gradient(135deg, #c62828, #e53935)' }}>
+            <Flame size={24} />
+          </div>
+          <h3>End Times</h3>
+          <p>Armageddon & Mahdi</p>
         </Link>
       </div>
 

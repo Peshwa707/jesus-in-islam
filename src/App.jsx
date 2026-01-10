@@ -9,6 +9,7 @@ import SecondComing from './pages/SecondComing'
 import Comparative from './pages/Comparative'
 import PaganInfluences from './pages/PaganInfluences'
 import Prophecies from './pages/Prophecies'
+import EndTimes from './pages/EndTimes'
 import Search from './pages/Search'
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <Route path="comparative" element={<Comparative />} />
         <Route path="pagan-influences" element={<PaganInfluences />} />
         <Route path="prophecies" element={<Prophecies />} />
+        <Route path="end-times" element={<EndTimes />} />
         <Route path="search" element={<Search />} />
       </Route>
     </Routes>

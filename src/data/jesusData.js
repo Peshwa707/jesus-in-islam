@@ -903,6 +903,306 @@ export const propheciesAndDenials = {
   conclusion: 'These biblical passages align perfectly with the Islamic understanding of Jesus as a great prophet who called people to worship the One God. The Quran confirms: "The Messiah, Jesus, the son of Mary, was but a messenger of Allah and His word which He directed to Mary and a soul from Him. So believe in Allah and His messengers. And do not say, \'Three\'; desist - it is better for you. Indeed, Allah is but one God." (4:171)'
 };
 
+// End Times - Armageddon, Mahdi, Dajjal (Antichrist)
+export const endTimesInfo = {
+  title: 'End Times Prophecies',
+  arabicTitle: 'أشراط الساعة',
+  introduction: 'Both Islam and Christianity have detailed prophecies about the end times. While there are similarities, there are also significant differences in how each faith views the final events before the Day of Judgment.',
+
+  majorSigns: [
+    {
+      id: 1,
+      title: 'The Mahdi (The Guided One)',
+      arabicTitle: 'المهدي',
+      islamicBelief: {
+        description: 'The Mahdi is a righteous leader from the family of Prophet Muhammad who will appear before the end times. He will unite the Muslim world, establish justice, and prepare for the return of Jesus.',
+        keyPoints: [
+          'Descendant of Prophet Muhammad through Fatimah',
+          'His name will be Muhammad ibn Abdullah',
+          'Will fill the earth with justice after it was filled with oppression',
+          'Will rule for 7, 8, or 9 years before Jesus returns',
+          'Will lead Muslims in prayer when Jesus descends',
+          'Jesus will pray behind him initially, honoring the Muslim Ummah'
+        ],
+        hadithEvidence: [
+          {
+            text: 'The Mahdi is from my progeny, from the descendants of Fatimah.',
+            source: 'Sunan Abu Dawud, Ibn Majah'
+          },
+          {
+            text: 'The Mahdi will be from my family, from the descendants of Fatimah. His name will match my name, and his father\'s name will match my father\'s name.',
+            source: 'Sunan Abu Dawud'
+          },
+          {
+            text: 'Even if there remains only one day of this world, Allah will lengthen that day until He sends a man from me (my descendants) whose name matches my name.',
+            source: 'Sahih al-Tirmidhi'
+          }
+        ]
+      },
+      christianBelief: {
+        description: 'Christianity does not have an exact equivalent to the Mahdi. Some Christians view the concept of the Mahdi with suspicion, while others see parallels with the false prophet or even draw connections to their own messianic expectations.',
+        keyPoints: [
+          'No direct equivalent in mainstream Christianity',
+          'Some see him as a potential false prophet',
+          'Others note similarities to Jewish Messianic expectations',
+          'Focus is primarily on Jesus\' direct return'
+        ]
+      }
+    },
+    {
+      id: 2,
+      title: 'The Dajjal (The Antichrist)',
+      arabicTitle: 'المسيح الدجال',
+      islamicBelief: {
+        description: 'The Dajjal (Antichrist) is the greatest trial to face humanity. He will claim to be God and deceive many with his supernatural abilities. He will be one-eyed and the word "Kafir" (disbeliever) will be written on his forehead.',
+        keyPoints: [
+          'Will emerge between Syria and Iraq',
+          'One-eyed (right eye described as a floating grape)',
+          '"Kafir" written on his forehead, readable by all believers',
+          'Will have powers to create rain, revive the dead (illusions)',
+          'Will travel the entire earth except Mecca and Medina',
+          'His trial will last 40 days (1 day like a year, 1 like a month, 1 like a week, rest normal)',
+          'Will have a paradise and hell - but reversed (his paradise is actually hell)',
+          'Will be killed by Jesus at the gate of Ludd (Lod) in Palestine'
+        ],
+        hadithEvidence: [
+          {
+            text: 'There will be no tribulation greater than that of the Dajjal from the creation of Adam until the Hour.',
+            source: 'Sahih Muslim'
+          },
+          {
+            text: 'The Dajjal is blind in his right eye and his eye looks like a floating grape.',
+            source: 'Sahih al-Bukhari'
+          },
+          {
+            text: 'Between the eyes of Dajjal will be written "Kafir" which every believer will read, whether literate or illiterate.',
+            source: 'Sahih Muslim'
+          }
+        ]
+      },
+      christianBelief: {
+        description: 'The Antichrist in Christianity is a figure who opposes Christ and deceives humanity. Different denominations have varying interpretations - some see it as a specific person, others as a system or spirit of opposition to God.',
+        keyPoints: [
+          'Mentioned in 1 John and Revelation',
+          'Will deceive many and oppose Christ',
+          'Often associated with the "Beast" of Revelation',
+          'Some see the number 666 as his mark',
+          'Will establish a one-world government/religion',
+          'Will be defeated at Christ\'s return',
+          'Some interpret as a system rather than individual'
+        ],
+        biblicalReferences: [
+          '1 John 2:18 - "You have heard that the Antichrist is coming"',
+          'Revelation 13:1-18 - The Beast',
+          '2 Thessalonians 2:3-4 - Man of lawlessness'
+        ]
+      }
+    },
+    {
+      id: 3,
+      title: 'Return of Jesus (Isa)',
+      arabicTitle: 'نزول عيسى عليه السلام',
+      islamicBelief: {
+        description: 'Jesus will descend from heaven near a white minaret in Damascus. He will kill the Dajjal, break the cross, abolish the jizyah, and establish Islam as the only religion. He will live for 40 years, marry, have children, and die a natural death.',
+        keyPoints: [
+          'Will descend at the white minaret east of Damascus',
+          'Will be wearing saffron-colored garments',
+          'Two angels will support him',
+          'Water will drip from his head as if he just bathed',
+          'Will kill the Dajjal at the gate of Ludd',
+          'Will break the cross (end the false belief of crucifixion)',
+          'Will kill the swine and abolish jizyah',
+          'All People of the Book will believe in him',
+          'Will perform Hajj and pray at the Kaaba',
+          'Will live 40 years, die, and be buried next to Prophet Muhammad in Medina'
+        ],
+        hadithEvidence: [
+          {
+            text: 'By Him in Whose Hand is my soul, the son of Mary will soon descend among you as a just judge.',
+            source: 'Sahih al-Bukhari'
+          },
+          {
+            text: 'He will descend at the white minaret in the eastern side of Damascus.',
+            source: 'Sahih Muslim'
+          }
+        ]
+      },
+      christianBelief: {
+        description: 'Jesus will return in glory to judge the living and the dead. He will defeat the Antichrist, establish His kingdom, and reign forever. Most Christians believe He will return as divine, not merely as a prophet.',
+        keyPoints: [
+          'Will return in clouds with great glory',
+          'Every eye will see Him',
+          'Will judge all humanity',
+          'Will defeat Satan and the Antichrist',
+          'Will establish eternal kingdom',
+          'Some believe in a 1000-year reign (Millennium)',
+          'Returns as God incarnate, not just a prophet'
+        ],
+        biblicalReferences: [
+          'Matthew 24:30 - Coming on clouds with power and glory',
+          'Revelation 19:11-16 - The rider on the white horse',
+          'Acts 1:11 - Will return the same way He ascended'
+        ]
+      }
+    },
+    {
+      id: 4,
+      title: 'Gog and Magog (Yajuj and Majuj)',
+      arabicTitle: 'يأجوج ومأجوج',
+      islamicBelief: {
+        description: 'Yajuj and Majuj are two destructive tribes held back by a barrier built by Dhul-Qarnayn. Near the end times, they will break through and cause great corruption. They will be so numerous that they will drink up entire lakes.',
+        keyPoints: [
+          'Currently held behind a barrier of iron and copper',
+          'Will break through near the end times',
+          'Enormous in number - beyond counting',
+          'Will cause massive destruction on earth',
+          'Will drink the Sea of Galilee dry',
+          'Jesus and believers will seek refuge on Mount Tur',
+          'Allah will send worms/insects to kill them',
+          'Birds will carry away their bodies',
+          'Rain will cleanse the earth'
+        ],
+        quranicEvidence: 'Until when Yajuj and Majuj are let loose, and they rush down from every elevation. (Quran 21:96)'
+      },
+      christianBelief: {
+        description: 'Gog and Magog appear in Ezekiel and Revelation as enemies of God\'s people who will attack Israel but be destroyed by divine intervention.',
+        keyPoints: [
+          'Mentioned in Ezekiel 38-39 and Revelation 20',
+          'Will attack Israel/God\'s people',
+          'Some see as nations from the north',
+          'Will be destroyed by God\'s intervention',
+          'In Revelation, appear after the Millennium',
+          'Fire from heaven consumes them'
+        ],
+        biblicalReferences: [
+          'Ezekiel 38-39 - Prophecy against Gog',
+          'Revelation 20:8 - Gog and Magog deceived by Satan'
+        ]
+      }
+    },
+    {
+      id: 5,
+      title: 'The Great Battle (Armageddon / Al-Malhama)',
+      arabicTitle: 'الملحمة الكبرى',
+      islamicBelief: {
+        description: 'The Malhama (great battle) will be a massive war before the appearance of the Dajjal. Muslims will fight alongside the Romans (Christians) against a common enemy, then the Romans will betray and fight the Muslims. This will be the bloodiest battle in history.',
+        keyPoints: [
+          'Will occur in the region of Syria/Sham',
+          'Muslims will initially ally with Romans against common enemy',
+          'After victory, a Roman will raise the cross claiming victory for it',
+          'A Muslim will break the cross, leading to conflict',
+          'The great battle will begin',
+          'One-third of Muslim army will flee (not forgiven)',
+          'One-third will be martyred (best martyrs)',
+          'One-third will be victorious',
+          'Constantinople will be conquered by takbir alone',
+          'Then the Dajjal will emerge'
+        ],
+        hadithEvidence: [
+          {
+            text: 'You will make a peace treaty with the Romans, and together you will fight an enemy behind them.',
+            source: 'Sahih Muslim'
+          },
+          {
+            text: 'The Hour will not come until the Romans land at al-A\'maq or Dabiq.',
+            source: 'Sahih Muslim'
+          }
+        ]
+      },
+      christianBelief: {
+        description: 'Armageddon is the final battle between good and evil at the end of the world. It takes its name from Megiddo in Israel. Christ will return and defeat the forces of the Antichrist.',
+        keyPoints: [
+          'Named after Har Megiddo (Mount Megiddo) in Israel',
+          'Final battle between Christ and Antichrist',
+          'All nations gathered for war',
+          'Christ returns to defeat evil forces',
+          'Beast and false prophet thrown into lake of fire',
+          'Precedes the Millennium in some interpretations'
+        ],
+        biblicalReferences: [
+          'Revelation 16:16 - "They gathered at Armageddon"',
+          'Revelation 19:19-21 - The beast\'s armies defeated',
+          'Zechariah 14:2-4 - Nations gathered against Jerusalem'
+        ]
+      }
+    }
+  ],
+
+  minorSigns: [
+    'Widespread ignorance and loss of religious knowledge',
+    'Increase in earthquakes',
+    'Time will pass quickly',
+    'Increase in killing and bloodshed',
+    'Spread of wealth until no one accepts charity',
+    'Competition in building tall buildings',
+    'Women will outnumber men',
+    'Intoxicants and adultery will be widespread',
+    'Music and singing will be widespread',
+    'People will wish for death due to trials',
+    'The Euphrates will reveal a mountain of gold',
+    'Arabs will return to worshipping idols',
+    'The sun will rise from the West'
+  ],
+
+  timeline: {
+    islamic: [
+      'Minor signs (many already occurring)',
+      'Appearance of the Mahdi',
+      'The great battle (Al-Malhama)',
+      'Emergence of the Dajjal',
+      'Descent of Jesus',
+      'Jesus kills the Dajjal',
+      'Yajuj and Majuj released and destroyed',
+      'Peace and prosperity under Jesus',
+      'Death of Jesus and burial in Medina',
+      'Major signs: sun rising from West, the Beast, etc.',
+      'The Hour (Day of Judgment)'
+    ],
+    christian: [
+      'Signs of the times (wars, earthquakes, etc.)',
+      'Rise of the Antichrist',
+      'Great Tribulation',
+      'Battle of Armageddon',
+      'Second Coming of Christ',
+      'Defeat of Antichrist',
+      'Millennium (1000-year reign) - in some views',
+      'Gog and Magog war',
+      'Final Judgment',
+      'New Heaven and New Earth'
+    ]
+  },
+
+  keyDifferences: [
+    {
+      topic: 'Role of Jesus',
+      islam: 'Returns as a Muslim prophet, follower of Muhammad\'s law',
+      christianity: 'Returns as God/Son of God to judge and reign'
+    },
+    {
+      topic: 'The Mahdi',
+      islam: 'Central figure who prepares for Jesus\' return',
+      christianity: 'No equivalent; some view with suspicion'
+    },
+    {
+      topic: 'Jesus\' Death',
+      islam: 'Will die naturally and be buried in Medina',
+      christianity: 'Already died and rose; will reign eternally'
+    },
+    {
+      topic: 'The Cross',
+      islam: 'Jesus will break all crosses (symbol of false belief)',
+      christianity: 'The cross is central symbol of salvation'
+    },
+    {
+      topic: 'Final Religion',
+      islam: 'Islam will be the only religion',
+      christianity: 'Christ\'s kingdom established'
+    }
+  ],
+
+  conclusion: 'Despite differences, both Islam and Christianity affirm that Jesus will return, defeat evil, and establish justice. Muslims view Jesus as a prophet who will affirm Islam, while Christians view Him as God incarnate. The Quran states: "And indeed, Jesus will be a sign of the Hour, so have no doubt of it, and follow Me. This is a straight path." (43:61)'
+};
+
 // Helper function to get verse audio URL
 export const getVerseAudioUrl = (audioId) => `${AUDIO_BASE_URL}/${audioId}.mp3`;
 
@@ -950,6 +1250,7 @@ export default {
   comparativeBeliefs,
   paganInfluences,
   propheciesAndDenials,
+  endTimesInfo,
   getVerseAudioUrl,
   searchContent
 };
