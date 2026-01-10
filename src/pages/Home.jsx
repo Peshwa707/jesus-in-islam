@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { BookOpen, Scroll, Heart, BookMarked, Clock, GitCompare, Star } from 'lucide-react'
+import { BookOpen, Scroll, Heart, BookMarked, Clock, GitCompare, Star, Compass, BookText } from 'lucide-react'
 import { namesOfIsa } from '../data/jesusData'
 
 export default function Home() {
@@ -87,6 +87,22 @@ export default function Home() {
           </div>
           <h3>Comparative View</h3>
           <p>Islam vs Christianity</p>
+        </Link>
+
+        <Link to="/pagan-influences" className="quick-action">
+          <div className="icon" style={{ background: 'linear-gradient(135deg, #7b1fa2, #9c27b0)' }}>
+            <Compass size={24} />
+          </div>
+          <h3>Pagan Influences</h3>
+          <p>Historical parallels</p>
+        </Link>
+
+        <Link to="/prophecies" className="quick-action">
+          <div className="icon" style={{ background: 'linear-gradient(135deg, #0277bd, #039be5)' }}>
+            <BookText size={24} />
+          </div>
+          <h3>Biblical Prophecies</h3>
+          <p>Muhammad foretold</p>
         </Link>
       </div>
 

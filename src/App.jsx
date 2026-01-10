@@ -7,6 +7,8 @@ import Maryam from './pages/Maryam'
 import Hadith from './pages/Hadith'
 import SecondComing from './pages/SecondComing'
 import Comparative from './pages/Comparative'
+import PaganInfluences from './pages/PaganInfluences'
+import Prophecies from './pages/Prophecies'
 import Search from './pages/Search'
 
 function App() {
@@ -20,6 +22,8 @@ function App() {
         <Route path="hadith" element={<Hadith />} />
         <Route path="second-coming" element={<SecondComing />} />
         <Route path="comparative" element={<Comparative />} />
+        <Route path="pagan-influences" element={<PaganInfluences />} />
+        <Route path="prophecies" element={<Prophecies />} />
         <Route path="search" element={<Search />} />
       </Route>
     </Routes>

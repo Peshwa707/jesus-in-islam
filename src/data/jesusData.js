@@ -687,6 +687,222 @@ export const comparativeBeliefs = [
   }
 ];
 
+// Pagan Influences in Christianity
+export const paganInfluences = {
+  title: 'Pagan Influences in Christianity',
+  arabicTitle: 'التأثيرات الوثنية في المسيحية',
+  introduction: 'Many scholars and historians have noted similarities between certain Christian doctrines and practices with pre-existing pagan religions. These parallels raise important questions about the origins of beliefs that differ from the pure monotheism taught by Jesus.',
+  categories: [
+    {
+      id: 1,
+      title: 'The Trinity Doctrine',
+      content: 'The concept of a triune god was foreign to early Jewish Christians and Jesus himself. Similar trinities existed in ancient religions: Egyptian (Osiris, Isis, Horus), Hindu (Brahma, Vishnu, Shiva), and Babylonian (Anu, Enlil, Ea). The Trinity was not formally defined until the Council of Nicaea (325 CE) and Council of Constantinople (381 CE), centuries after Jesus.',
+      sources: ['Council of Nicaea records', 'Early Church history'],
+      paganParallels: ['Egyptian Triad', 'Hindu Trimurti', 'Babylonian Triad']
+    },
+    {
+      id: 2,
+      title: 'December 25th - Christmas',
+      content: 'Jesus\' birth date is unknown in the Bible. December 25th was chosen to coincide with existing pagan festivals: the Roman Saturnalia, the birthday of the sun god Sol Invictus, and the Persian Mithra\'s birthday. Early Christians did not celebrate Christmas; it was instituted centuries later.',
+      sources: ['Catholic Encyclopedia', 'Historical records'],
+      paganParallels: ['Saturnalia (Rome)', 'Sol Invictus birthday', 'Mithras birthday']
+    },
+    {
+      id: 3,
+      title: 'Easter and Its Symbols',
+      content: 'The name "Easter" derives from Eostre/Ishtar, a pagan goddess of spring and fertility. Eggs and rabbits are ancient fertility symbols with no connection to Jesus\' teachings. The timing coincides with spring equinox celebrations common in pagan religions.',
+      sources: ['Venerable Bede\'s writings', 'Historical etymology'],
+      paganParallels: ['Eostre/Ostara festival', 'Ishtar worship', 'Spring equinox celebrations']
+    },
+    {
+      id: 4,
+      title: 'Virgin Birth in Pagan Myths',
+      content: 'While Islam affirms the miraculous virgin birth of Jesus, many pagan religions had similar narratives: Perseus (born of Danae and Zeus), Dionysus, Mithras, and Horus were all claimed to have miraculous births. The key difference is Islam presents it as a miracle of the One God, not involving divine-human union.',
+      sources: ['Greek mythology', 'Comparative religion studies'],
+      paganParallels: ['Perseus', 'Dionysus', 'Mithras', 'Horus']
+    },
+    {
+      id: 5,
+      title: 'The Cross Symbol',
+      content: 'The cross was a pagan symbol long before Christianity. It was used in ancient Egypt (Ankh), Babylon, India, and other cultures. Early Christians used the fish symbol (Ichthys), not the cross. The cross became prominent only after Constantine in the 4th century.',
+      sources: ['Archaeological evidence', 'Early Christian art'],
+      paganParallels: ['Egyptian Ankh', 'Tau cross', 'Various sun symbols']
+    },
+    {
+      id: 6,
+      title: 'Sunday Worship',
+      content: 'Jesus and his disciples observed the Sabbath (Saturday). Sunday worship was adopted to align with the Roman "Day of the Sun" (dies Solis). Constantine officially made Sunday a day of rest in 321 CE, merging Christian practice with sun worship traditions.',
+      sources: ['Constantine\'s decree 321 CE', 'Biblical Sabbath references'],
+      paganParallels: ['Roman Sun worship', 'Mithraism']
+    },
+    {
+      id: 7,
+      title: 'The Concept of Divine Sonship',
+      content: 'Many pagan rulers and mythological figures were called "Son of God": Egyptian Pharaohs, Roman Emperors, Hercules, and others. In Jewish tradition, "son of God" was a title for righteous people and kings, not literal divine offspring. The literal interpretation came later under Greco-Roman influence.',
+      sources: ['Roman imperial cult', 'Jewish terminology studies'],
+      paganParallels: ['Pharaohs as sons of Ra', 'Roman Emperor worship', 'Greek demigods']
+    },
+    {
+      id: 8,
+      title: 'Dying and Rising Gods',
+      content: 'The narrative of a god dying and rising was common in ancient religions: Osiris (Egypt), Tammuz (Babylon), Attis (Phrygia), Adonis (Greece), and Dionysus. These myths predated Christianity and were widespread in the Mediterranean world.',
+      sources: ['Comparative mythology', 'James Frazer\'s "The Golden Bough"'],
+      paganParallels: ['Osiris', 'Tammuz', 'Attis', 'Adonis', 'Dionysus']
+    }
+  ],
+  conclusion: 'The Quran calls people back to the pure monotheism of all prophets, including Jesus, free from these later additions. As the Quran states: "Say, \'O People of the Scripture, come to a word that is equitable between us and you - that we will not worship except Allah and not associate anything with Him.\'" (3:64)'
+};
+
+// Prophecies of Prophet Muhammad and Jesus' Denial of Divinity
+export const propheciesAndDenials = {
+  title: 'Biblical Prophecies & Jesus\' True Message',
+  arabicTitle: 'النبوءات الكتابية ورسالة عيسى الحقيقية',
+  introduction: 'The Bible contains prophecies that Muslims believe refer to Prophet Muhammad, and clear statements from Jesus himself that affirm his humanity and servitude to God.',
+
+  prophecies: [
+    {
+      id: 1,
+      title: 'The Prophet Like Moses',
+      reference: 'Deuteronomy 18:18',
+      text: '"I will raise up for them a prophet like you from among their brothers. And I will put my words in his mouth, and he shall speak to them all that I command him."',
+      explanation: 'This prophecy speaks of a prophet "from among their brothers" - the Ishmaelites (Arabs), cousins of the Israelites. Muhammad, like Moses, brought a new law, led his people, and established a nation. Jesus did not bring a new comprehensive law like Moses did.',
+      keyPoints: [
+        'From "brothers" of Israelites (Ishmaelites/Arabs)',
+        'Like Moses - brought comprehensive law',
+        'God puts words in his mouth (Quran revelation)',
+        'Moses and Muhammad both married, led nations, died natural deaths'
+      ]
+    },
+    {
+      id: 2,
+      title: 'The Servant from Arabia',
+      reference: 'Isaiah 42:1-4, 10-11',
+      text: '"Behold my servant, whom I uphold... He will bring forth justice to the nations... Sing to the Lord a new song... Let the desert and its cities lift up their voice, the villages that Kedar inhabits."',
+      explanation: 'Kedar was the son of Ishmael (Genesis 25:13), and his descendants settled in Arabia. This prophecy speaks of God\'s servant bringing justice and a "new song" (new scripture) from Arabia - fitting Prophet Muhammad who came from the descendants of Kedar.',
+      keyPoints: [
+        'Kedar = son of Ishmael = Arabia',
+        'New song = new revelation (Quran)',
+        'Justice to nations = Islamic law',
+        'The servant, not the son'
+      ]
+    },
+    {
+      id: 3,
+      title: 'The Praised One (Muhammad)',
+      reference: 'Song of Solomon 5:16',
+      text: '"His mouth is most sweet: yea, he is altogether lovely (Muhammadim). This is my beloved, and this is my friend."',
+      explanation: 'In the Hebrew text, the word used is "Muhammadim" (מַחֲמַדִּים) - the same root as Muhammad, meaning "praised one" or "lovely." The "-im" suffix is a Hebrew honorific plural. This is a direct mention of the name Muhammad in the Hebrew Bible.',
+      keyPoints: [
+        'Hebrew "Muhammadim" = praised one',
+        'Same root as Arabic "Muhammad"',
+        'Honorific plural in Hebrew',
+        'Direct name reference'
+      ]
+    },
+    {
+      id: 4,
+      title: 'The Rider on Camels',
+      reference: 'Isaiah 21:7, 13-17',
+      text: '"And he saw a chariot with a pair of horsemen, a chariot of donkeys, and a chariot of camels... The burden upon Arabia... the glory of Kedar shall fail."',
+      explanation: 'This prophecy mentions riders on camels associated with Arabia and Kedar (Ishmael\'s descendants). It prophesies a significant event involving Arabia. The "chariot of donkeys" refers to Jesus who rode into Jerusalem on a donkey, while the "chariot of camels" refers to Prophet Muhammad who came from Arabia.',
+      keyPoints: [
+        'Two riders prophesied',
+        'Donkey rider = Jesus',
+        'Camel rider from Arabia = Muhammad',
+        'Kedar = Arabian descendants of Ishmael'
+      ]
+    },
+    {
+      id: 5,
+      title: 'The Comforter (Paraclete)',
+      reference: 'John 14:16, 16:7-14',
+      text: '"And I will ask the Father, and he will give you another Helper (Paraclete), to be with you forever... He will guide you into all truth."',
+      explanation: 'The Greek "Paraclete" has been interpreted as the Holy Spirit by Christians. However, the original Greek "Periklutos" (praised one) is equivalent to "Ahmad/Muhammad." The Quran confirms Jesus foretold Ahmad (61:6). The Paraclete is described as someone who will come after Jesus, speak what he hears, and guide into all truth - matching Prophet Muhammad.',
+      keyPoints: [
+        'Periklutos = Ahmad = Muhammad (praised)',
+        'Will come after Jesus departs',
+        'Will speak what he hears (revelation)',
+        'Will guide into ALL truth',
+        'Quran 61:6 confirms this prophecy'
+      ]
+    },
+    {
+      id: 6,
+      title: 'Baca (Mecca)',
+      reference: 'Psalm 84:5-6',
+      text: '"Blessed is the man whose strength is in thee; in whose heart are the highways to Zion. Passing through the valley of Baca, they make it a place of springs."',
+      explanation: 'Baca is the ancient name for Mecca, as mentioned in Quran 3:96: "Indeed, the first House of worship established for mankind was that at Bakkah (Mecca)." The pilgrimage to the sacred valley and the well of Zamzam align with this prophecy.',
+      keyPoints: [
+        'Baca = Bakkah = Mecca',
+        'Pilgrimage reference',
+        'Springs = Zamzam well',
+        'Quran 3:96 confirms Bakkah'
+      ]
+    }
+  ],
+
+  jesusDenialOfDivinity: [
+    {
+      id: 1,
+      title: 'Jesus Called God His Father',
+      reference: 'John 20:17',
+      text: '"I am ascending to my Father and your Father, to my God and your God."',
+      explanation: 'Jesus clearly states that God is HIS God, just as God is the God of his disciples. If Jesus were God himself, he would not have a God above him.'
+    },
+    {
+      id: 2,
+      title: 'The Father is Greater',
+      reference: 'John 14:28',
+      text: '"The Father is greater than I."',
+      explanation: 'Jesus explicitly states the Father is greater than him, indicating clear hierarchy and distinction, not equality in a Trinity.'
+    },
+    {
+      id: 3,
+      title: 'Jesus Denies Being Good',
+      reference: 'Mark 10:18',
+      text: '"Why do you call me good? No one is good except God alone."',
+      explanation: 'When called "good," Jesus redirects the praise to God alone, distinguishing himself from God.'
+    },
+    {
+      id: 4,
+      title: 'Limited Knowledge',
+      reference: 'Mark 13:32',
+      text: '"But concerning that day or that hour, no one knows, not even the angels in heaven, nor the Son, but only the Father."',
+      explanation: 'Jesus admits he doesn\'t know the Hour - only the Father knows. An all-knowing God cannot have limited knowledge.'
+    },
+    {
+      id: 5,
+      title: 'Jesus Prayed to God',
+      reference: 'Matthew 26:39',
+      text: '"And going a little farther he fell on his face and prayed, saying, \'My Father, if it be possible, let this cup pass from me; nevertheless, not as I will, but as you will.\'"',
+      explanation: 'Jesus prayed to God, prostrating on his face (like Muslims). He submitted his will to God\'s will - the act of a servant, not God himself.'
+    },
+    {
+      id: 6,
+      title: 'Sent by God',
+      reference: 'John 17:3',
+      text: '"And this is eternal life, that they know you, the only true God, and Jesus Christ whom you have sent."',
+      explanation: 'Jesus calls the Father "the ONLY true God" and describes himself as one who was "sent" - a messenger, not God.'
+    },
+    {
+      id: 7,
+      title: 'Jesus Did Nothing of Himself',
+      reference: 'John 5:30',
+      text: '"I can do nothing on my own. As I hear, I judge, and my judgment is just, because I seek not my own will but the will of him who sent me."',
+      explanation: 'Jesus states he can do nothing independently - he only does God\'s will. This is the definition of a prophet and servant.'
+    },
+    {
+      id: 8,
+      title: 'Worshipping the Father',
+      reference: 'John 4:23',
+      text: '"But the hour is coming, and is now here, when the true worshippers will worship the Father in spirit and truth."',
+      explanation: 'Jesus directs worship to the Father, not to himself. He never instructed people to worship him.'
+    }
+  ],
+
+  conclusion: 'These biblical passages align perfectly with the Islamic understanding of Jesus as a great prophet who called people to worship the One God. The Quran confirms: "The Messiah, Jesus, the son of Mary, was but a messenger of Allah and His word which He directed to Mary and a soul from Him. So believe in Allah and His messengers. And do not say, \'Three\'; desist - it is better for you. Indeed, Allah is but one God." (4:171)'
+};
+
 // Helper function to get verse audio URL
 export const getVerseAudioUrl = (audioId) => `${AUDIO_BASE_URL}/${audioId}.mp3`;
 
@@ -732,6 +948,8 @@ export default {
   maryamInfo,
   secondComingInfo,
   comparativeBeliefs,
+  paganInfluences,
+  propheciesAndDenials,
   getVerseAudioUrl,
   searchContent
 };
